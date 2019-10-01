@@ -17,7 +17,8 @@ public class trapezoid {
         double area = (top + bottom) / 2 * height;
 
         System.out.print("The area of the trapezoid is ");
-        System.out.printf("%.1f\n", area );
+        System.out.printf("%.1f", area );
+        System.out.print(".");
 
         in.close();
     }
