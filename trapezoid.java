@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.text.NumberFormat;
 
 
 public class trapezoid {
@@ -6,19 +7,17 @@ public class trapezoid {
         Scanner in = new Scanner(System.in);
 
 
-        System.out.print("\nEnter the top dimension: ");
+        System.out.print("Enter the top dimension: ");
         double top = in.nextDouble();
-        System.out.print("\nEnter the bottom dimension: ");
+        System.out.print("Enter the bottom dimension: ");
         double bottom = in.nextDouble();
-        System.out.print("\nEnter the height dimension ");
+        System.out.print("Enter the height dimension ");
         double height = in.nextDouble();
 
         double area = (top + bottom) / 2 * height;
 
-        System.out.println("\nThe area of the trapezoid is " + area);
-
-
-
+        System.out.print("The area of the trapezoid is ");
+        System.out.printf("%.1f\n", area, " is the area of the trapezoid.");
 
         in.close();
     }
