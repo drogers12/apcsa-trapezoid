@@ -7,14 +7,19 @@ public class trapezoid {
 
 
         System.out.print("\nEnter the top dimension: ");
-        double top = in.nextLine();
+        double top = in.nextDouble();
         System.out.print("\nEnter the bottom dimension: ");
-        double bottom = in.nextline();
+        double bottom = in.nextDouble();
         System.out.print("\nEnter the height dimension ");
-        double height = in.nextline();
+        double height = in.nextDouble();
+
+        double area = (top + bottom) / 2 * height;
+
+        System.out.println("\nThe area of the trapezoid is " + area);
 
 
 
-        in.close
+
+        in.close();
     }
 }
